@@ -1,12 +1,25 @@
-* {box-shadow:  0px 0px 0px 1px red}
+/* * {box-shadow:  0px 0px 0px 1px red} */
 body {
     margin: 0px;
     font-family: 'Hedvig Letters Sans', sans-serif;
 }
 header {
+        width: 80%;
+}
+header, footer {
     background-color: rgb(111, 110, 110);
-    color: white;
+    color: white !important;
     padding: 0px 10%;
+    height: 70px;
+}
+footer * {
+    color: white !important;
+    text-decoration: none;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .flex {
     display: flex;
@@ -22,6 +35,18 @@ li {
     margin-right: 30px;
     margin-top: 5px;
 }
+footer {
+    height: 100px;
+}
+footer section {
+    flex-direction: column; 
+    margin: 40px 20px;
+    align-items: start;
+    justify-content: start;
+}
+footer section a {
+    margin-top: 10px;
+}
 @media screen and (max-width: 470px) {
     header {height: 100px}
     ul {
@@ -32,4 +57,31 @@ li {
 }
 .logoPng {
     width: 50px;
+    height: 50px;
+}
+
+.faq-container {
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+.faq-question {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.faq-answer {
+    padding: 10px;
+}
+
+.show-answer .faq-answer {
+    display: block;
+}
+
+.show-answer .arrow {
+    transform: rotate(180deg);
 }
