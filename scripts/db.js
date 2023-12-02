@@ -78,16 +78,14 @@ const faqData = [
     }
 ];
 const display = document.getElementById('faq-container')
-for (let i = faqData.length - 1, j = 1; i >= 0; i--, j++) {
+for (let i = 0; i < faqData.length; i++) {
     faqHTML += `
-        <div class="faq-container">
             <div class="faq-question" onclick="toggleAnswer(this)">
                 ${faqData[i].pergunta}
                 <span class="arrow">&#9660;</span>
             </div>
             <div class="faq-answer">
                 ${faqData[i].resposta}
-            </div>
-        </div>`;
+            </div>`;
 };
 display.innerHTML = faqHTML;
