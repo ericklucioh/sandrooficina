@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
+        <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
         <meta charset="UTF-8">
         <meta name="author" content="Érick Lúcio">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,50 +48,55 @@
         </header>
         <main>
             <section id="servicos" class="faq-container">
-                <section class="faq-container">
-                    <article class="faq-question">
+                <section class="faq-container" >
+                    <article class="faq-question" onclick="arrow('a1')">
                         Como posso agendar um serviço na Sandro Oficina?
                         <span class="arrow">&#9660;</span>
                     </article>
-                    <article class="faq-answer">
+                    <article id="a1" class="faq-answer" onclick="arrow1('a1')">
                         Agendar um serviço conosco é fácil e conveniente. Você pode ligar para o nosso número de atendimento ao cliente durante o horário comercial ou utilizar a nossa plataforma online de agendamento no site. Basta escolher a data e hora que melhor se adequam à sua agenda.
                     </article>
                 </section>
+            
                 <section class="faq-container">
-                    <article class="faq-question">
+                    <article class="faq-question" onclick="arrow('a2')">
                         Quais tipos de serviços a Sandro Oficina oferece?
                         <span class="arrow">&#9660;</span>
                     </article>
-                    <article class="faq-answer">
+                    <article class="faq-answer" id="a2" onclick="arrow1('a2')">
                         Na Sandro Oficina, oferecemos uma ampla gama de serviços automotivos, desde manutenção preventiva até reparos complexos. Isso inclui troca de óleo, freios, suspensão, alinhamento, balanceamento, e diagnósticos eletrônicos, entre outros. Estamos comprometidos em fornecer soluções abrangentes para as necessidades do seu veículo.
                     </article>
                 </section>
+            
                 <section class="faq-container">
-                    <article class="faq-question">
+                    <article class="faq-question" onclick="arrow('a3')">
                         A Sandro Oficina utiliza peças originais nos reparos?
                         <span class="arrow">&#9660;</span>
                     </article>
-                    <article class="faq-answer">
+                    <article class="faq-answer" id="a3" onclick="arrow1('a3')">
                         Sim, na Sandro Oficina priorizamos a qualidade e durabilidade. Utilizamos peças originais e de alta qualidade em todos os nossos reparos. Isso garante que seu veículo receba componentes confiáveis e que atendam aos padrões de fábrica.
                     </article>
                 </section>
+            
                 <section class="faq-container">
-                    <article class="faq-question">
+                    <article class="faq-question" onclick="arrow('a4')">
                         Qual é o prazo médio para a conclusão dos serviços na Sandro Oficina?
                         <span class="arrow">&#9660;</span>
                     </article>
-                    <article class="faq-answer">
+                    <article class="faq-answer" id="a4" onclick="arrow1('a4')">
                         O prazo para a conclusão dos serviços pode variar com base na complexidade do trabalho. No entanto, nos esforçamos para concluir a maioria dos serviços em um prazo razoável. Ao agendar o serviço, forneceremos uma estimativa do tempo necessário, garantindo transparência e planejamento adequado.
                     </article>
                 </section>
                 <section class="faq-container">
-                    <article class="faq-question">
+                    <article class="faq-question" onclick="arrow('a5')">
                         A Sandro Oficina oferece garantia nos serviços realizados?
                         <span class="arrow">&#9660;</span>
                     </article>
-                    <article class="faq-answer">
+                    <article class="faq-answer" id="a5" onclick="arrow1('a5')">
                         Sim, na Sandro Oficina, oferecemos garantia nos serviços realizados. Estamos confiantes na qualidade do nosso trabalho e nas peças que utilizamos. Caso surjam problemas após o reparo, entre em contato conosco, e faremos o necessário para resolver a situação de acordo com nossa política de garantia.
                     </article>
+                </section>
+            </section>
                 </section>
             </section>
             <section id="diferenciais" class="section-container">
@@ -124,6 +130,7 @@
                 <a href="https://wa.me/5548999512880" target="_blank">WhatsApp</a>
             </section>
         </footer> 
-        <script src="db.js"></script>   
+        <script src="./scripts/db.js"></script>   
+        <script src="./scripts/main.js"></script>   
     </body>
 </html>
